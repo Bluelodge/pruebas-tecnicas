@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { FiltersContext } from "../context/filter"
+import { FILTER_DEFAULT_VALUES } from "../constants/constants"
 
 export function useFilters () {
     const context = useContext(FiltersContext)
@@ -18,12 +19,12 @@ export function useFilters () {
                 parseInt(book.year)>= parseInt(context.minYear)
                 &&
                 (
-                    context.genre === 'all' ||
+                    context.genre === FILTER_DEFAULT_VALUES.GENRE_VALUE ||
                     book.genre === context.genre
                 )
                 &&
                 (
-                    context.author === 'all' ||
+                    context.author === FILTER_DEFAULT_VALUES.AUTHOR_VALUE ||
                     book.author === context.author
                 )
             )
