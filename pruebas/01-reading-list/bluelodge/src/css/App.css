@@ -1,0 +1,109 @@
+.filter-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: rgb(220, 38, 38);
+}
+
+.filter-select {
+  background-image: url("../svg/redarrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.3rem top 50%;
+  background-size: 0.65rem auto;
+}
+
+.filter-select:hover {
+  background-image: url("../svg/purplearrow.svg");
+}
+
+.book-cover:hover ~ .book-info, .reading-book-image:hover ~ .reading-book-details {
+  z-index: 5;
+  display: block;
+  position: absolute;
+  direction: ltr;
+  inline-size: 22ch;
+  word-break: break-word;
+  white-space: pre-line;
+  hyphens: manual;
+  height: auto;
+  pointer-events: none;
+}
+
+.book-info .noise-popover, .reading-book-details .noise-popover  {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, rgba(31, 0, 27, 0.4) 0%, rgba(31, 0, 27, 0.55) 70%),
+  url("../svg/noise.svg");   
+  filter: contrast(170%);
+}
+
+.reading-button ~ input:checked ~ .reading-books {
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.reading-button ~ input:checked ~ .reading-notice {
+  display: block;
+}
+
+.reading-button ~ input:checked ~ .reading-books-title {
+  display: block;
+}
+
+.reading-book-shadow {
+  z-index: -1;
+  top: 50%;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background-color: rgba(9,9,11,.5);
+}
+
+/* Size */
+.reading-books::-webkit-scrollbar {
+  height: 8px;
+}
+
+/* Track */
+.reading-books::-webkit-scrollbar-track {
+  background: rgba(9,9,11,.7);
+  border-radius: 3px;
+}
+
+/* Handle */
+.reading-books::-webkit-scrollbar-thumb {
+  background: rgba(251, 191, 36, .6);
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+.reading-books::-webkit-scrollbar-thumb:hover {
+  background: rgba(251, 191, 36, 1);
+}
+
+:root:has(.siteTheme ~ input:checked) .reading-book-shadow {
+  background-color: rgba(161, 161, 170, 0.6);
+}
+
+:root:has(.siteTheme ~ input:checked) .filter-slider::-webkit-slider-thumb {
+  background: rgb(250, 204, 21); 
+}
+
+:root:has(.siteTheme ~ input:checked) .filter-select {
+  background-image: url("../svg/creamarrow.svg");
+}
+
+:root:has(.siteTheme ~ input:checked) .filter-select:hover {
+  background-image: url("../svg/yellowarrow.svg");
+}
+
+:root:has(.siteTheme ~ input:checked) .reading-books::-webkit-scrollbar-track {
+  background: rgba(76,29,149,.4);
+}

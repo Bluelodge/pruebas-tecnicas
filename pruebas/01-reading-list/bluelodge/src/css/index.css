@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "kristal", sans-serif, system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-synthesis: none;
+  line-height: 1 !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  color: rgba(251, 191, 36);
+  background-color: rgb(29, 0, 23);
+  color-scheme: dark;
+}
+
+:root h1 {
+  font-family: "pentz-classic", serif;
+  font-weight: 400;
+  letter-spacing: .3rem;
+  word-spacing: .6rem;
+}
+
+:root h2,
+.library-name {
+  font-family: "pentz-regular", serif;
+  font-weight: 400 !important;
+  letter-spacing: .1rem;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.isolate {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  min-width: 320px;
+  width: 100vw;
+}
+
+.noise-background {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, rgba(31, 0, 27, 0.4) 0%, rgba(31, 0, 27, 0.5) 65%),
+    url("../svg/noise.svg");
+  filter: contrast(170%);
+}
+
+:root:has(.siteTheme ~ input:checked) .ligth-mode {
+  display: block;
+}
+:root:has(.siteTheme ~ input:checked) .dark-mode {
+  display: none;
+}
+
+:root:has(.siteTheme ~ input:checked) {
+  background-color: rgb(235, 188, 142);
+  color: rgb(88, 28, 135);
+}
+
+:root:has(.siteTheme ~ input:checked) .noise-background {
+  background: radial-gradient(circle, rgba(148, 17, 17, 0.35) 0%, rgba(148, 17, 17, 0.45) 65%),
+    url("../svg/noise.svg");
+  filter: contrast(170%) brightness(900%);
+}

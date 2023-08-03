@@ -1,11 +1,18 @@
-import './App.css'
+import { ReadingProvider } from './context/library.jsx'
+
+import { Header } from './components/Header.jsx'
+import { Library } from './components/Library.jsx'
+import { Theme } from './components/Theme.jsx'
+
+import './css/App.css'
 
 function App() {
-
   return (
-    <>
-      <h1>READING LIST</h1>
-    </>
+    <ReadingProvider>
+      <Theme />
+      <Header />
+      <Library />
+    </ReadingProvider>
   )
 }
 
