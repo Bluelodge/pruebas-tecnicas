@@ -1,9 +1,6 @@
 import { useId } from "react"
 import { useTheme } from "../hooks/useTheme"
 
-import light from '../svg/iconDay.png'
-import dark from '../svg/iconNight.png'
-
 export function Theme() {
 
   const themeInputId = useId()
@@ -24,8 +21,8 @@ export function Theme() {
           className="siteTheme cursor-pointer"
           htmlFor={themeInputId}
         >
-          <img className="ligth-mode hidden" src={light} alt="Icono ligth mode" width="30px"  />
-          <img className="dark-mode" src={dark} alt="Icono dark mode" width="30px"  />
+          <img className="ligth-mode hidden" src="/iconLigthMode.webp" alt="Icono ligth mode" width="30px"  />
+          <img className="dark-mode" src="/iconDarkMode.webp" alt="Icono dark mode" width="30px"  />
         </label>
         <input
           className="hidden"

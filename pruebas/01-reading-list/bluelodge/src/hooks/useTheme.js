@@ -4,7 +4,7 @@ import { THEME_MODES, THEME_LOCAL_STORAGE } from "../constants/constants"
 export function useTheme() {
     
     const userTheme = window.localStorage.getItem(THEME_LOCAL_STORAGE)
-
+    
     UserTheme({userTheme})
 
     const changeTheme = () => {
