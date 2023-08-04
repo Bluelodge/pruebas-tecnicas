@@ -4,7 +4,7 @@ import { THEME_MODES, THEME_LOCAL_STORAGE } from "../constants/constants"
 export function useTheme() {
     
     const userTheme = window.localStorage.getItem(THEME_LOCAL_STORAGE)
-    
+
     UserTheme({userTheme})
 
     const changeTheme = () => {
@@ -21,5 +21,5 @@ export function useTheme() {
             : document.documentElement.classList.remove(THEME_MODES.DARK)
     }
 
-    return { changeTheme }
+    return { changeTheme, userTheme }
 }

@@ -1,11 +1,12 @@
 import { useId } from "react"
 import { useTheme } from "../hooks/useTheme"
+import { THEME_MODES } from "../constants/constants"
 
 export function Theme() {
 
   const themeInputId = useId()
 
-  const { changeTheme } = useTheme()
+  const { changeTheme, userTheme } = useTheme()
   
   const handleClick = () => {
     changeTheme()
@@ -25,11 +26,12 @@ export function Theme() {
           <img className="dark-mode" src="/iconDarkMode.webp" alt="Icono dark mode" width="30px"  />
         </label>
         <input
-          className="hidden"
-          id={themeInputId}
-          type="checkbox"
-          onClick={handleClick}
-        />
+            className="hidden"
+            id={themeInputId}
+            type="checkbox"
+            onChange={handleClick}
+            defaultChecked={ userTheme === THEME_MODES.LIGHT ? "checked" : "" }
+            />
       </div>
     </>
   )
