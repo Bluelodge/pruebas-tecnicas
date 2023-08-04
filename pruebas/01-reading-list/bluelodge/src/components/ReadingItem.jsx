@@ -1,3 +1,5 @@
+import { PropTypes } from 'prop-types'
+
 export function ReadingItem({ image, title, details, removeFromReadingList }) {
   return (
     <li className="w-44 mx-4 pb-2 relative inline-block rounded-lg text-center">
@@ -24,4 +26,11 @@ export function ReadingItem({ image, title, details, removeFromReadingList }) {
       </div>
     </li>
   )
+}
+
+ReadingItem.propTypes = {
+  image: PropTypes.string,
+  title: PropTypes.string,
+  details: PropTypes.string,
+  removeFromReadingList: PropTypes.func
 }

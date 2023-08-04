@@ -249,6 +249,132 @@
           ]
         }
       }
+    },
+    {
+      "book": {
+        "title": "La ladrona de libros",
+        "pages": 531,
+        "genre": "Ficción Histórica",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1320512103i/2166416.jpg",
+        "synopsis": "En la Alemania previa a la II Guerra Mundial, Liesel y su hermano son enviados a vivir con una familia de acogida, pero el niño fallece. Para ella, el poder de las palabras y la imaginación se convierte en una forma de escapar de lo que le rodea.",
+        "year": 2006,
+        "ISBN": "978-0307391995",
+        "author": {
+          "name": "Markus Zusak",
+          "otherBooks": [
+            "Underdog",
+            "Cartas cruzadas"
+          ]
+        }
+      }
+    },
+    {
+      "book": {
+        "title": "El señor de las Moscas",
+        "pages": 256,
+        "genre": "Distopía",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1535457176i/792859.jpg",
+        "synopsis": "Fábula moral acerca de la condición humana, EL SEÑOR DE LAS MOSCAS es además un prodigioso relato literario susceptible de lecturas diversas y aun opuestas.",
+        "year": 1954,
+        "ISBN": "978-8420634111",
+        "author": {
+          "name": "Wiliam Golding",
+          "otherBooks": [
+            "Ritos de paso",
+            "Pincher Martin"
+          ]
+        }
+      }
+    },
+    {
+      "book": {
+        "title": "Jayne Eyre",
+        "pages": 532,
+        "genre": "Romance",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1479652506i/11016.jpg",
+        "synopsis": "Dueña de un singular temperamento desde su complicada infancia de huérfana, primero a cargo de una tía poco cariñosa y después en la escuela Lowood, Jane Eyre logra el puesto de institutriz en Thornfield Hall para educar a la hija de su atrabiliario y peculiar dueño, el señor Rochester.",
+        "year": 1847,
+        "ISBN": "978-0142437209",
+        "author": {
+          "name": "Charlotte Brontë",
+          "otherBooks": [
+            "Emma",
+            "Villette"
+          ]
+        }
+      }
+    },
+    {
+      "book": {
+        "title": "El amor en los tiempos del cólera",
+        "pages": 461,
+        "genre": "Realismo Mágico",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1344369019i/500400.jpg",
+        "synopsis": "De jóvenes, Florentino Ariza y Fermina Daza se enamoran apasionadamente, pero Fermina eventualmente decide casarse con un médico rico y de muy buena familia. ",
+        "year": 1985,
+        "ISBN": "978-0307387264",
+        "author": {
+          "name": "Gabriel García Márquez",
+          "otherBooks": [
+            "Cien años de soledad",
+            "El coronel no tiene quien le escriba"
+          ]
+        }
+      }
+    },
+    {
+      "book": {
+        "title": "Balada de pájaros cantores y serpientes",
+        "pages": 587,
+        "genre": "Distopía",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1581579145i/51219756.jpg",
+        "synopsis": "La ambición será su motor. La rivalidad, su motivación. Pero alcanzar el poder tiene un precio.",
+        "year": 2020,
+        "ISBN": "978-8427220287",
+        "author": {
+          "name": "Suzanne Collins",
+          "otherBooks": [
+            "Los juegos del hambre",
+            "Gregor: La primera profecía"
+          ]
+        }
+      }
+    },
+    {
+      "book": {
+        "title": "Percy Jackson y el ladrón del rayo",
+        "pages": 283,
+        "genre": "Fantasía",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1481567822i/7816926.jpg",
+        "synopsis": "¿Qué pasaría si un día descubrieras que, en realidad, eres hijo de un dios griego que debe cumplir una misión secreta? Pues eso es lo que le sucede a Percy Jackson, que a partir de ese momento se dispone a vivir los acontecimientos más emocionantes de su vida.",
+        "year": 2006,
+        "ISBN": "978-8498382365",
+        "author": {
+          "name": "Rick Riordan",
+          "otherBooks": [
+            "Magnus Chase y los dioses de Asgard",
+            "Las crónicas de Kane"
+          ]
+        }
+      }
+    },
+    {
+      "book": {
+        "title": "Los siete maridos de Evelyn Hugo",
+        "pages": 384,
+        "genre": "Romance",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1569260797l/52061530.jpg",
+        "synopsis": "Evelyn Hugo, el ícono de Hollywood que se ha recluido en su edad madura, decide al fin contar la verdad sobre su vida llena de glamour y de escándalos. ",
+        "year": 2017,
+        "ISBN": "978-8416517275",
+        "author": {
+          "name": "Taylor Jenkins Reid",
+          "otherBooks": [
+            "Todos quieren a Daisy Jones",
+            "Los dos amores de mi vida"
+          ]
+        }
+      }
     }
   ]
 }

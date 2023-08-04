@@ -6,12 +6,12 @@ import { ReadingBooks } from './ReadingList.jsx'
 
 import '../css/App.css'
 
-export function Library () {
-    return (
-        <FiltersProvider>
-            <ReadingBooks />
-            <Filters />
-            <Books />
-        </FiltersProvider>
-    )
+export function Library() {
+  return (
+    <FiltersProvider>
+      <ReadingBooks />
+      <Filters />
+      <Books />
+    </FiltersProvider>
+  )
 }

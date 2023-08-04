@@ -1,3 +1,5 @@
+import { PropTypes } from 'prop-types'
+
 export function BookItem({ title, image, author, year, details, genre, addToReadingList }) {
   return (
     <li
@@ -43,4 +45,14 @@ export function BookItem({ title, image, author, year, details, genre, addToRead
       </div>
     </li>
   )
+}
+
+BookItem.propTypes= {
+  title: PropTypes.string,
+  image: PropTypes.string,
+  author: PropTypes.string,
+  year: PropTypes.number,
+  details: PropTypes.string,
+  genre: PropTypes.string,
+  addToReadingList: PropTypes.func
 }
