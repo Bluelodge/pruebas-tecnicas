@@ -1,22 +1,11 @@
 import { useEffect } from 'react'
-import responseLibrary from '../mocks/books.json'
+import { library } from '../logic/books'
 
 export function useBooks({ context }) {
-    const bookList = responseLibrary.library
-
-    const library = bookList.map(({ book }) => ({
-        id: book.ISBN,
-        title: book.title,
-        pages: book.pages,
-        genre: book.genre,
-        image: book.cover,
-        details: book.synopsis,
-        year: book.year,
-        author: book.author.name
-    }))
+    const mappedBooks = library
 
     useEffect(() => {
-        context.setInitialLibrary(library)
+        context.setInitialLibrary(mappedBooks)
     }, [])
 
     return { library }

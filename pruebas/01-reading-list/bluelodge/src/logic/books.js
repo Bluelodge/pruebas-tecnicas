@@ -1,3 +1,18 @@
+import responseLibrary from '../mocks/books.json'
+
+const bookList = responseLibrary.library
+
+export const library = bookList.map(({ book }) => ({
+    id: book.ISBN,
+    title: book.title,
+    pages: book.pages,
+    genre: book.genre,
+    image: book.cover,
+    details: book.synopsis,
+    year: book.year,
+    author: book.author.name
+}))
+
 export function FetchGenres ({ library }) {
 
     const genres = []
