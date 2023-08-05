@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
-import { library } from '../logic/books'
+import { mappedBooks } from '../logic/books'
 
 export function useBooks({ context }) {
-    const mappedBooks = library
+    const library = mappedBooks
 
     useEffect(() => {
         context.setInitialLibrary(mappedBooks)

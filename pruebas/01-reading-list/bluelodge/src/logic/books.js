@@ -2,7 +2,7 @@ import responseLibrary from '../mocks/books.json'
 
 const bookList = responseLibrary.library
 
-export const library = bookList.map(({ book }) => ({
+export const mappedBooks = bookList.map(({ book }) => ({
     id: book.ISBN,
     title: book.title,
     pages: book.pages,
